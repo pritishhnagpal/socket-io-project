@@ -1,0 +1,38 @@
+.box {
+  display: flex;
+  /* height: 100%; */
+  /* align-items: center; */
+  /* padding-top: 100px; */
+}
+
+.time {
+  margin-left: 20px;
+}
+
+.limit {
+  display: flex;
+  /* height: 100%; */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-flow: row;
+  margin-top: 100px;
+}
+
+.student {
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.chat {
+  border: 1px solid black;
+  padding: 20px;
+}

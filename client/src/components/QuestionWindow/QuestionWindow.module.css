@@ -1,0 +1,33 @@
+.box {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.chat {
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.qBox {
+  margin-top: 100px;
+}
+
+.box > div {
+  margin-right: 50px;
+}
+
+.top {
+  display: flex;
+}
+
+.option {
+  border: 2px solid black;
+  min-width: 100px;
+  padding: 20px;
+  margin-bottom: 4px;
+}

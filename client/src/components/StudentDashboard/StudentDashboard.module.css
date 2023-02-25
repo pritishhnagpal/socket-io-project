@@ -1,0 +1,8 @@
+.container {
+  border: 1px solid black;
+  padding: 50px;
+}
+
+.container > div > span {
+  margin-right: 30px;
+}
