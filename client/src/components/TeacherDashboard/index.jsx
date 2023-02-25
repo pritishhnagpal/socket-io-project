@@ -216,6 +216,8 @@ export default function TeacherDashboard({ socket }) {
         </div>
         <div style={{ border: "1px solid black", padding: 20, minWidth: 300 }}>
           <h1>Students Online</h1>
+          <h4>Click on name to open chat window</h4>
+          <h4></h4>
           {students?.map(({ id, userName }) => (
             <div>
               <div

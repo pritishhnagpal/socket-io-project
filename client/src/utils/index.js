@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8010/";
+const BASE_URL = "https://poll-service-wc5d.onrender.com/";
 
 export async function customApi({
   endpoint,

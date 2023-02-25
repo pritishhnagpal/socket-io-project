@@ -1,6 +1,6 @@
 import "./App.css";
 import { io } from "socket.io-client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import StudentDashboard from "./components/StudentDashboard";
@@ -9,7 +9,7 @@ import QuestionWindow from "./components/QuestionWindow";
 import SignUp from "./components/Signup";
 import Login from "./components/Login";
 
-const socket = io("http://localhost:8010");
+const socket = io("https://poll-service-wc5d.onrender.com/");
 
 function App() {
   const [channels, setChannels] = useState([]);
@@ -45,6 +45,7 @@ function App() {
       element: <SignUp socket={socket} />,
     },
   ];
+
   return (
     <BrowserRouter>
       <Routes>

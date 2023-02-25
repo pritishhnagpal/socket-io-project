@@ -144,8 +144,8 @@ io.on("connection", (socket) => {
     if (!channelPresent) {
       channels.push({ channelId, createdBy: socket.id });
       createChannel(token, channelId);
+      io.sockets.emit("new-channels", channels);
     }
-    io.emit("new-channels", channels);
   });
 
   socket.on("join-channel", ({ channelId, userName, token }) => {
@@ -242,6 +242,6 @@ io.on("connection", (socket) => {
 
 // socket.emit("chat");
 
-server.listen(8010, () => {
+server.listen(process.env.PORT || 8010, () => {
   console.log("Listening at 8010");
 });
